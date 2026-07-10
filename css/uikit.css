@@ -232,7 +232,7 @@ h6,
 .uk-heading-xlarge,
 .uk-heading-2xlarge {
   margin: 0 0 20px 0;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Mexcellent', monospace;
   font-weight: normal;
   color: #333;
   text-transform: none;
@@ -5172,7 +5172,7 @@ ul.uk-nav-sub {
   padding: 0 15px;
   /* 4 */
   font-size: 0.875rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Mexcellent', monospace;
   /* 5 */
   text-decoration: none;
 }
