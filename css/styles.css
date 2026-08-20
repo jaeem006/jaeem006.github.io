@@ -1,60 +1,256 @@
 @font-face {
     font-family: "Neue Kabel W01 Book";
     src: url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.eot");
-    src: url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.svg#Neue Kabel W01 Book")format("svg");
+    src:
+        url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/18997729e452a082c38ae1a86a873674.svg#Neue Kabel W01 Book") format("svg");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Mexcellent";
     src: url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.eot");
-    src: url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.svg#Mexcellent")format("svg");
+    src:
+        url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/a71dd5d04430a5d021186c05537a34f6.svg#Mexcellent") format("svg");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Mexcellent V1";
     src: url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.eot");
-    src: url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.svg#Mexcellent V1")format("svg");
+    src:
+        url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/c8e08d8af275a2577388127977ac638f.svg#Mexcellent V1") format("svg");
+    font-display: swap;
 }
 
-*{
-    font-family: "Neue Kabel W01 Book";
+
+/* --------------------------------------------------
+   Base
+-------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Neue Kabel W01 Book", sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+/* --------------------------------------------------
+   Main content
+-------------------------------------------------- */
 
 .content {
-    margin-left: 20%;
-    margin-right: 20%;
     width: 60%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+/* --------------------------------------------------
+   Sections
+-------------------------------------------------- */
+
 .container {
     display: flex;
+    align-items: flex-start;
+    gap: 10%;
     margin-bottom: 80px;
 }
 
-.container .left{
+.container .left {
     width: 30%;
+    flex: 0 0 30%;
+}
+
+.container .right {
+    width: 60%;
+    flex: 1 1 60%;
+    min-width: 0;
 }
 
 .container .left h3 {
-    font-family: "Mexcellent";
+    margin-bottom: 0;
+    font-family: "Mexcellent", sans-serif;
 }
 
-.container .right{
-    width: 60%;
-}
+
+/* --------------------------------------------------
+   Typography
+-------------------------------------------------- */
 
 .name {
-    font-family: "Mexcellent";
-    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    font-family: "Mexcellent", sans-serif;
+    font-size: clamp(3.5rem, 7vw, 100px);
+    line-height: 0.95;
+    overflow-wrap: anywhere;
+}
+
+h2 {
+    overflow-wrap: break-word;
+}
+
+h3 {
+    overflow-wrap: break-word;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+
+/* --------------------------------------------------
+   Large tablets / small desktops
+-------------------------------------------------- */
+
+@media (max-width: 1000px) {
+    .content {
+        width: 80%;
+    }
+
+    .container {
+        gap: 8%;
+    }
+
+    .container .left {
+        width: 32%;
+        flex-basis: 32%;
+    }
+
+    .container .right {
+        width: 60%;
+        flex-basis: 60%;
+    }
+}
+
+
+/* --------------------------------------------------
+   Tablets
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .content {
+        width: calc(100% - 48px);
+    }
+
+    .container {
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    .container .left {
+        width: 30%;
+        flex-basis: 30%;
+    }
+
+    .container .right {
+        width: 70%;
+        flex-basis: 70%;
+    }
+
+    .name {
+        font-size: clamp(3rem, 9vw, 5rem);
+    }
+}
+
+
+/* --------------------------------------------------
+   Mobile
+-------------------------------------------------- */
+
+@media (max-width: 600px) {
+    .content {
+        width: calc(100% - 32px);
+    }
+
+    .container {
+        display: block;
+        margin-bottom: 56px;
+    }
+
+    .container .left,
+    .container .right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container .left {
+        margin-bottom: 20px;
+    }
+
+    .container .left h3 {
+        margin-bottom: 12px;
+    }
+
+    .name {
+        font-size: clamp(2.8rem, 14vw, 5rem);
+        line-height: 0.95;
+    }
+
+    .container .right h2 {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+}
+
+
+/* --------------------------------------------------
+   Small mobile devices
+-------------------------------------------------- */
+
+@media (max-width: 400px) {
+    .content {
+        width: calc(100% - 24px);
+    }
+
+    .container {
+        margin-bottom: 48px;
+    }
+
+    .name {
+        font-size: clamp(2.4rem, 15vw, 4rem);
+    }
+
+    .container .right h2 {
+        font-size: 1.1rem;
+    }
 }
